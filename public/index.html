@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form-container" class="form-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form-container" class="form-container" style="display: none;">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Log Workout Form -->
+    <div id="log-workout-form" class="form-container" style="display: none;">
+        <h2>Log Workout</h2>
+        <form id="workout-form">
+            <input type="text" id="exercise" placeholder="Exercise" required><br>
+            <input type="number" id="reps" placeholder="Reps" required><br>
+            <input type="number" id="sets" placeholder="Sets" required><br>
+            <button type="submit">Log Workout</button>
+        </form>
+    </div>
+
+    <!-- Workout List -->
+    <div id="workout-list" style="display: none;">
+        <h2>Your Workouts</h2>
+        <ul id="workout-list-items"></ul>
+    </div>
+
+    <!-- Logout Button -->
+    <button id="logout-btn" style="display: none;">Logout</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
