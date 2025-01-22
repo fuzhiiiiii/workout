@@ -133,5 +133,5 @@ app.post('/login', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at https://fuzhi-68d2c510d713.herokuapp.com/`);
 });
